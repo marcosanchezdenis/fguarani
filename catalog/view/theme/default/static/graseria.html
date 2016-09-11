@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<!---------------------------------------------------------------------- HEAD ------------------------------------------------------------------------>
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Frigorífico Guarani l Productos</title>
+<meta name="description" content="Frigorifico Guarani" />
+<meta name="keywords" content="Frigorifico, Guarani, Frigorifico Guarani, Embutidos, Chorizos, Carne, Punto Carne, Aviko, Envasados, Hamburguesas, Kids, Light, Packs, Panchos, Pate, PC, Vacas" />
+<link rel="shortcut icon" href="/catalog/view/theme/default/images/ico/favicon.ico" type="image/x-icon"/>
+
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+        
+<link rel="stylesheet" type="text/css" href="/catalog/view/theme/default/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/catalog/view/theme/default/stylesheet/productos.css" />
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="/catalog/view/theme/default/script/menu.js"></script>
+<script src="/catalog/view/theme/default/script/respond.min.js"></script>
+<script type="text/javascript">
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+	
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+</script>
+<script src="/catalog/view/theme/default/script/jquery.min.js"></script>  
+<script src="/catalog/view/theme/default/script/slide/unslider.js"></script>
+<script src="/catalog/view/theme/default/script/slide/unslider.min.js"></script>
+<script src="/catalog/view/theme/default/script/modernizr.custom.js"></script>
+<script src="/catalog/view/theme/default/script/carrousel.js"></script>
+<script src="/catalog/view/theme/default/script/productos/imagesloaded.pkgd.min.js"></script>
+<script src="/catalog/view/theme/default/script/productos/masonry.pkgd.min.js"></script>
+<script src="/catalog/view/theme/default/script/productos/classie.js"></script>
+<script src="/catalog/view/theme/default/script/productos/main.js"></script>
+
+<!--------------------------------------------------------------------- FANCY ------------------------------------------------------------------------>
+
+	<script type="text/javascript" src="/catalog/view/theme/default/script/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="/catalog/view/theme/default/script/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	
+    <link rel="stylesheet" type="text/css" href="/catalog/view/theme/default/script/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',
+				closeBtn  : false,
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+
+<!--------------------------------------------------------------------- FANCY ------------------------------------------------------------------------>
+
+</head>
+
+<!---------------------------------------------------------------------- HEAD ------------------------------------------------------------------------>
+
+<!---------------------------------------------------------------------- BODY ------------------------------------------------------------------------>
+
+<body>
+
+<!---------------------------------------------------------------------- DISC -------------------------------------------------------------------------->
+
+	<div id="disclaimer_container-img"> </div>
+    <div id="disclaimer_cotainer-descr"> 
+    
+		  <div class="grid">
+          
+				<div class="grid__item" data-size="1280x857" style="position: relative;">
+					<a href="/catalog/view/theme/default/images/productos/original/none.png" class="img-wrap"><img src="/catalog/view/theme/default/images/productos/thumbs/none.png" alt="img06" />Harina de Carne y Hueso
+						<div class="description description--grid">
+						  <h3>Harina de Carne y Hueso</h3>
+							<p><strong>Información:</strong> Fuente de proteína de origen animal exclusivamente bovino destinado a la elaboración de alimento balanceado de animales, excepto los rumiantes, y principalmente aves, cerdos y mascotas (pet foods). También aporta calcio, fosforo y valor energético.</p>
+						</div>
+					</a>
+				</div>
+                
+				<div class="grid__item" data-size="1280x857" style="position: relative;">
+					<a href="/catalog/view/theme/default/images/productos/original/none.png" class="img-wrap"><img src="/catalog/view/theme/default/images/productos/thumbs/none.png" alt="img06" />Sebo Bovino Fundido </br>o Grasa Industrial
+						<div class="description description--grid">
+							<h3>Sebo Bovino Fundido o Grasa Industrial</h3>
+							<p><strong>Información:</strong> Materia prima para la elaboración de jabones y  para la elaboración de biodiesel principalmente.</p>							
+						</div>
+					</a>
+				</div>             
+
+			</div>
+         
+			<div class="preview">
+				<button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+				<div class="description description--preview"></div>
+			</div>
+            
+    	<script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : -0.5,
+					y : 1
+				},
+				onOpenItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 50);
+							el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+							el.style.transform = 'scale3d(0.1,0.1,1)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+							el.style.transition = 'opacity .4s, transform .4s';
+							el.style.WebkitTransform = 'scale3d(1,1,1)';
+							el.style.transform = 'scale3d(1,1,1)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+    
+    </div>
+   
+</body>
+    
+<!---------------------------------------------------------------------- BODY ------------------------------------------------------------------------>
+
+</html>
